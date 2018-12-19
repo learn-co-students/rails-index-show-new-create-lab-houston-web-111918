@@ -1,0 +1,8 @@
+<h1>List of all coupons</h1>
+
+<%=link_to "Maka newa coupona", new_coupon_path%>
+
+
+<%@coupons.each do |coupon|%>
+<p><%=link_to coupon.coupon_code, coupon%><br>
+<%end%>
