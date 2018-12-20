@@ -1,0 +1,7 @@
+<h1> Coupon Form </h1>
+
+<%= form_for @coupon do |form| %>
+<%= form.text_field :coupon_code, placeholder: "Code" %>
+<%= form.text_field :store, placeholder: "Store" %>
+<%= submit_tag :'Submit Coupon' %>
+<% end %>
